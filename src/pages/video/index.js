@@ -1,6 +1,11 @@
 import React from "react";
 import { Titulo, Container, Texto } from "../info/index";
 import ReactPlayer from "react-player";
+import styled from "styled-components";
+
+const VideoContainer = styled.div`
+  height: 700px;
+`;
 export const Video = () => {
   return (
     <Container>
@@ -69,11 +74,13 @@ export const Video = () => {
         simulações climáticas ou pesquisas apontadas na CLUSTERS OF EUROPEAN
         PROJECTS ON CLOUD.
       </Texto>
-      <ReactPlayer
-        url="https://www.youtube.com/watch?v=AGp7UFz6_es&feature=youtu.be"
-        width="1200px"
-        height="720px"
-      />
+      <VideoContainer>
+        <ReactPlayer
+          url="https://www.youtube.com/watch?v=AGp7UFz6_es&feature=youtu.be"
+          width="100%"
+          height="100%"
+        />
+      </VideoContainer>
     </Container>
   );
 };

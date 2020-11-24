@@ -8,7 +8,7 @@ const RecipeContainer = styled.div`
     margin-top: 20px;
     overflow: hidden;
 
-    flex: 1;
+    flex: 1 1 300px;
 }
 `;
 export const Card = ({ children }) => {
