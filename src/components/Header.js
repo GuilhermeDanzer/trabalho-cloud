@@ -44,22 +44,21 @@ export const Header = () => {
   return (
     <Wrapper>
       <Nav>
-        <ItensNav>
-          <Link href="/">
+        <Link href="/">
+          <ItensNav>
             <Texto>Home</Texto>
-          </Link>
-        </ItensNav>
-
-        <ItensNav>
-          <Link href="/info">
+          </ItensNav>
+        </Link>
+        <Link href="/info">
+          <ItensNav>
             <Texto>Info</Texto>
-          </Link>
-        </ItensNav>
-        <ItensNav>
-          <Link href="/video">
+          </ItensNav>
+        </Link>
+        <Link href="/video">
+          <ItensNav>
             <Texto>Video</Texto>
-          </Link>
-        </ItensNav>
+          </ItensNav>
+        </Link>
       </Nav>
     </Wrapper>
   );
